@@ -1,0 +1,33 @@
+
+h1{color:#df2323; 
+    font-size: 50px; 
+    text-align: center; 
+    border: double blueviolet 10px;
+    background: rgb(233, 222, 214);
+    padding: 20pt; }
+h2{color:rgba(3, 2, 2, 0.774);
+    font-size:30px;
+    text-align: center; 
+    border: groove rgb(197, 206, 230) 2px;
+    background-image: url(jpeg/фон1.jpg)} 
+h3{color:rgba(47, 0, 255, 0.815);
+    font-size:25px}
+h4{color:rgba(255, 0, 149, 0.815);
+    font-size:34px;
+    text-align: center; 
+    border: groove rgb(145, 0, 72) 2px;
+    padding: 50pt;
+    margin: 100px;}
+p{color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: justify;
+    margin: 30pt;}
+body{color: rgb(100, 29, 29);
+    background-image: url(jpeg/торт.jpg);} 
+a{color: rgb(14, 1, 1);
+    text-decoration: none;}
+a:hover {text-decoration: underline;
+    color: #df2323;}
+img{padding-right: 10px;
+    border-left: 2px dashed green}
+span{font-style: italic;color: rgb(175, 14, 14);}

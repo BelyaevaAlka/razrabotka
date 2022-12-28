@@ -1,0 +1,153 @@
+
+    .container {  display: grid;
+        grid-template-columns: 300px 300px 300px 300px;
+        grid-template-rows: auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "post9 post1 post1 post10"
+          "post2 post3 post7 post8";}
+  
+    .container1 {  display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "post4 post4 post4 post4"
+      "post5 post6 post6 post6";}
+
+
+.post1 { grid-area: post1; }
+.post2 { grid-area: post2; }
+.post3 { grid-area: post3; }
+.post4 { grid-area: post4; }
+.post5 { grid-area: post5; }
+.post6 { grid-area: post6; }
+.post7 { grid-area: post7; }
+.post8 { grid-area: post8; }
+.post9 { grid-area: post9; padding: 100px; align-content: center; }
+.post10 { grid-area: post10; padding: 100px;  align-content: center;}
+
+
+h1{color:#e65908; 
+    font-size: 50px; 
+    text-align: center; 
+    border: double rgb(136, 71, 197) 10px;
+    background: rgb(247, 239, 239);
+    padding: 20pt; 
+    animation: cake  5s infinite ease-in-out;}
+        @keyframes cake {from {text-shadow: 0 0 4px rgb(47, 0, 255);}
+          20% {text-shadow: 0 0 30px rgb(91, 190, 91);}
+          to {text-shadow: 0 0 6px rgb(255, 251, 0);} }
+
+h2{color:rgba(3, 2, 2, 0.774);
+    font-size:30px;
+    text-align: center; 
+    border: groove rgb(197, 206, 230) 2px;
+    background-image: url(jpeg/фон1.jpg);} 
+
+h3{color:rgba(47, 0, 255, 0.815);
+    text-align: center;
+    font-size:25px;
+    transform: scale(1,1)}
+
+h4{color:rgba(255, 0, 149, 0.815);
+    font-size:34px;
+    text-align: center; 
+    border: groove rgb(145, 0, 72) 2px;
+    padding: 50pt;
+    margin: 100px;}
+p{color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: justify;
+    margin: 30pt;}
+body{color: rgb(100, 29, 29);
+    background-image: url(jpeg/торт.jpg);} 
+a{color: rgb(14, 1, 1);
+    text-decoration: none;}
+a:hover {text-decoration: underline;
+    color: #df2323;}
+img{padding-right: 100px;
+    text-align: center;
+    border-left: 2px dashed green}
+span{font-style: italic;color: rgb(175, 14, 14);}
+
+
+.animated {
+    transition-property: background-color;
+    transition-duration: 3s;
+  }
+     
+  #digit {
+    width: .5em;
+    overflow: hidden;
+    font: 32px monospace;
+    cursor: pointer;
+  }
+  
+  #stripe {
+    display: inline-block
+  }
+  
+  #stripe.animate {
+    transform: translate(-90%);
+    transition-property: transform;
+    transition-duration: 9s;
+    transition-timing-function: linear;
+  }
+
+
+  @keyframes loader {
+    0% {transform:rotate(0deg)}
+    50%{transform:rotate(130deg)}
+    60%{transform:rotate(0deg)}
+    80% {transform:rotate(-150deg)}
+    90%{transform:rotate(110deg)}
+    100%{transform:rotate(0deg)}}
+  @keyframes span-1 {
+    0% {transform:translate(-150deg);border-color:#ff5e00}
+    50% {transform:translate(50);}
+    100%{transform:translate(-50px, 0);border-color:#ff5e00}
+    80%{transform:translate(0);}
+    0% {transform:translate(0);}}
+
+    
+  .loader {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    animation: loader 5s infinite ease-in-out;
+  }
+  .loader span {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-top: 50px dotted ;
+  }
+  .loader span:nth-child(1) {
+    animation: span-1 5s ease-in-out infinite;
+  }
+  .loader span:nth-child(2) {
+    animation: span-2 5s ease-in-out infinite;
+  }
+  .loader span:nth-child(3) {
+    animation: span-3 5s ease-in-out infinite;
+  }
+  .loader span:nth-child(4) {
+    animation: span-4 5s ease-in-out infinite;
+  }
+  .loader span:nth-child(5) {
+    animation: span-5 5s ease-in-out infinite;
+  }
+
+
+  
+    Веб-страница обязательно должна содержать:
+1) Минимум 3 разные анимации 
+(разные анимации применяются к разным элементам на странице).
+2) Использование свойства CSS transform
+3) Использование свойства CSS transition
+4) Использование свойства CSS animation-direction
+5) Использование свойства CSS animation-delay
+6) Использование свойства CSS animation-play-state
